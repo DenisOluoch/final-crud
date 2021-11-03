@@ -6,4 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+// Books Routing
+router.get('/books', function(req, res, next) {
+  res.render('books', { title: 'Books' });
+});
+
 module.exports = router;
